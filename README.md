@@ -59,5 +59,4 @@ Java面经记录
 4. ThreadPool 参数 wait/sleep 线程状态
 5. synchronized reentrantlock AQS
 6. mysql 索引 隔离级别 RR可重复读 MVCC 幻读 间隙锁Gap Lock
-7. sleep wait
-8. kafka
+7. 常用的集合  arraylist与linkedlist区别
