@@ -1,7 +1,7 @@
 # interview
 Java面经记录
 
-2021.3.18 叮咚买菜
+## 2021.3.18 叮咚买菜
 1. 分享一个比较经典的优化sql的例子，关心的是具体的case，有数据的支撑；
 2. java8的新特性，stream流的使用，简单介绍一下这个功能，类似于filter的中间的操作有哪些，结果的操作有哪些reduce，collect；用stream判断两个list是否包含对方的元素；
 并行的stream用过吗？parallelSteam
@@ -20,11 +20,11 @@ Java面经记录
 15. 具体的技术规划，工作中遇到什么问题；
 
 
-2021.4.16 字节跳动 飞书 小程序面板
+## 2021.4.16 字节跳动 飞书 小程序面板
 算法题 判断字符串是否可以由字典中的字符串组成 动态规划 https://blog.csdn.net/summer2day/article/details/97430955
 
 
-2021.4.22 阿里巴巴本地生活 一面 同事面经
+## 2021.4.22 阿里巴巴本地生活 一面 同事面经
 hashmap的数据结构
 hashmap你怎么实现线程安全，参考ConcurrentHashMap
 
@@ -47,11 +47,11 @@ jvm的内存结构
 消息的顺序消费
 
 
-2021.4.23 字节跳动 同事面经
+## 2021.4.23 字节跳动 同事面经
 算法题 合并区间  排序+双指针 https://leetcode-cn.com/problems/merge-intervals/
 
 
-2022.6.14 字节跳动 飞书 企业应用 财务
+## 2022.6.14 字节跳动 飞书 企业应用 财务
 算法题 蛇形打印二叉树 层序遍历变种  https://wenku.baidu.com/view/e4043a3dfc00bed5b9f3f90f76c66137ef064f57.html
 联合索引（a,b）生效不生效情况
 索引底层数据结构 B+树
@@ -61,7 +61,7 @@ java bean是多例还是单例？单例，可以多例吗？可以，什么场�
 目前负责的项目亮点 
 
 
-2022.6.23 擎朗科技 同事面经
+## 2022.6.23 擎朗科技 同事面经
 JVM JMM volatile memory barrier
 GC 方法区/元空间GC是否清理
 反射 代理  泛型 泛型擦除 Bean
