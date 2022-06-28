@@ -61,7 +61,7 @@ Java面经记录
 6. mysql 索引 隔离级别 RR可重复读 MVCC 幻读 间隙锁Gap Lock
 7. 常用的集合  arraylist与linkedlist区别
 
-##2022.6.27 顺丰 同事
+## 2022.6.27 顺丰 同事
 1. AQS
 2. MVCC 
 3. 分布式锁
