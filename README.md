@@ -52,7 +52,7 @@ Java面经记录
 6. 限流操作 令牌桶 漏桶 滑动窗口
 7. 目前负责的项目亮点 广告发布投放解耦  xxl-job 多账号虚拟金
     
-## 2022.6.23 擎朗科技 同事面经
+## 2022.6.23 擎朗智能 同事面经
 1. JVM JMM volatile memory barrier
 2. GC 方法区/元空间GC是否清理
 3. 反射 代理  泛型 泛型擦除 Bean
@@ -60,3 +60,12 @@ Java面经记录
 5. synchronized reentrantlock AQS
 6. mysql 索引 隔离级别 RR可重复读 MVCC 幻读 间隙锁Gap Lock
 7. 常用的集合  arraylist与linkedlist区别
+
+##2022.6.27 顺丰 同事
+1. AQS
+2. MVCC 
+3. 分布式锁
+4. nacos与apollo的区别
+5. B树与B+树
+6. 线程池 线程池参数 线程状态（6种） wait和blocked的区别
+7. 工作上解决的问题
