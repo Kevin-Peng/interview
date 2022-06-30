@@ -82,3 +82,26 @@ Java面经记录
 9. kafka 使用场景
 10. 幂等
 11. ES
+
+## 2022.6.29 泛微 同事
+1. jre jdk
+2. equals和==的区别
+3. String 的hashcode和equals方法
+4. redis使用场景 缓存穿透 缓存击穿
+5. threadLocal
+6. 双亲委派
+7. 热部署
+8. 分表场景 如何拓展
+9. full GC场景 oom排查 死锁如何查
+10. 软引用
+11. nacos
+12. kafka和rabbitMQ的区别，kafka的使用场景
+13. kafka延迟现象 实时性比较强要如何处理
+
+## 2022.6.29 飞书深诺 同事
+1. JMM
+2. 跳跃表 skipList
+3. hashmap concurrenthashmap
+4. 如何写一个优秀的代码
+5. 悲观锁 乐观锁
+6. 如果让你设计架构你会考虑哪些
