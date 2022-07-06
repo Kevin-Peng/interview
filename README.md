@@ -120,3 +120,15 @@ Java面经记录
 11. redis为什么那么快 redis key失效
 12. 慢接口优化
 13. 换工作原因 加班的看法
+
+## 2022.07.06 万国数据 同事
+1. spring 事务传播机制及其实现原理
+2. feign实现原理
+3. 分布式锁实现原理
+4. 死锁分析
+5. mysql死锁怎么排查  怎么产生的
+6. springboot与spring区别
+7. springboot @enable相关注解实现机制
+8. 怎么分表的
+9. ck为啥这么块 适合前端页面查询场景么
+10. jdk7 8 11区别  conncurrenthashmap实现原理
