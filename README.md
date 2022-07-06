@@ -1,7 +1,7 @@
 # interview
 Java面经记录
     
-## 2021.3.18 叮咚买菜
+## 2021.03.18 叮咚买菜
 1. 分享一个比较经典的优化sql的例子，关心的是具体的case，有数据的支撑；
 2. java8的新特性，stream流的使用，简单介绍一下这个功能，类似于filter的中间的操作有哪些，结果的操作有哪些reduce，collect；用stream判断两个list是否包含对方的元素；
    并行的stream用过吗？parallelSteam
@@ -19,10 +19,10 @@ Java面经记录
 14. 快排知道怎么排的吗；
 15. 具体的技术规划，工作中遇到什么问题；
     
-## 2021.4.16 字节跳动 飞书 小程序面板
+## 2021.04.16 字节跳动 飞书 小程序面板
 算法题 判断字符串是否可以由字典中的字符串组成 动态规划 https://blog.csdn.net/summer2day/article/details/97430955
     
-## 2021.4.22 阿里巴巴本地生活 一面 同事面经
+## 2021.04.22 阿里巴巴本地生活 一面 同事面经
 1. hashmap的数据结构
 2. hashmap你怎么实现线程安全，参考ConcurrentHashMap
 3. synchronized  ReentrantLock
@@ -40,10 +40,10 @@ Java面经记录
 15. 怎么保证消息的可靠性
 16. 消息的顺序消费
     
-## 2021.4.23 字节跳动 同事面经
+## 2021.04.23 字节跳动 同事面经
 1. 算法题 合并区间  排序+双指针 https://leetcode-cn.com/problems/merge-intervals/
     
-## 2022.6.14 字节跳动 飞书 企业应用 财务
+## 2022.06.14 字节跳动 飞书 企业应用 财务
 1. 算法题 蛇形打印二叉树 层序遍历变种  https://wenku.baidu.com/view/e4043a3dfc00bed5b9f3f90f76c66137ef064f57.html
 2. 联合索引（a,b）生效不生效情况
 3. 索引底层数据结构 B+树
@@ -52,7 +52,7 @@ Java面经记录
 6. 限流操作 令牌桶 漏桶 滑动窗口
 7. 目前负责的项目亮点 广告发布投放解耦  xxl-job 多账号虚拟金
     
-## 2022.6.23 擎朗智能 同事面经
+## 2022.06.23 擎朗智能 同事面经
 1. JVM JMM volatile memory barrier
 2. GC 方法区/元空间GC是否清理
 3. 反射 代理  泛型 泛型擦除 Bean
@@ -61,7 +61,7 @@ Java面经记录
 6. mysql 索引 隔离级别 RR可重复读 MVCC 幻读 间隙锁Gap Lock
 7. 常用的集合  arraylist与linkedlist区别
 
-## 2022.6.27 顺丰 同事
+## 2022.06.27 顺丰 同事
 1. AQS
 2. MVCC 
 3. 分布式锁
@@ -70,7 +70,7 @@ Java面经记录
 6. 线程池 线程池参数 线程状态（6种） wait和blocked的区别
 7. 工作上解决的问题
 
-## 2022.6.28 擎创 同事
+## 2022.06.28 擎创 同事
 1. Kafka rabbitMQ 顺序读写 零拷贝 批量拉取
 2. redis RDB AOF
 3. 分布式锁
@@ -83,7 +83,7 @@ Java面经记录
 10. 幂等
 11. ES
 
-## 2022.6.29 泛微 同事
+## 2022.06.29 泛微 同事
 1. jre jdk
 2. equals和==的区别
 3. String 的hashcode和equals方法
@@ -98,10 +98,25 @@ Java面经记录
 12. kafka和rabbitMQ的区别，kafka的使用场景
 13. kafka延迟现象 实时性比较强要如何处理
 
-## 2022.6.29 飞书深诺 同事
+## 2022.06.29 飞书深诺 同事
 1. JMM
 2. 跳跃表 skipList
 3. hashmap concurrenthashmap
 4. 如何写一个优秀的代码
 5. 悲观锁 乐观锁
 6. 如果让你设计架构你会考虑哪些
+
+## 2022.07.05 珍岛 同事
+1. nacos和Apollo的区别  k8s和docker的区别
+2. Spring事务实现流程
+3. 数据库 乐观锁 分布式锁使用场景
+4. ReentrantLock Sychronized JDK11 优化
+5. hashmap和hashset的区别
+6. 克隆方法
+7. 下单30分钟发送短信
+8. 一个表 id  科目 分数  查询每个科目最高分的id  sql语句
+9. sql判断有没有走索引 索引失效的情况
+10. binlog使用场景
+11. redis为什么那么快 redis key失效
+12. 慢接口优化
+13. 换工作原因 加班的看法
