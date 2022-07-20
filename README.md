@@ -164,3 +164,44 @@ net转到Java方向，介绍net做过哪些（net打印方面做过吗）
 问对方
 对方后端  团队情况  人员配置
 3个Java  一共10个人
+
+## 2022.07.19 维音 同事
+说一说离职原因
+上班距离有要求吗
+加班问题怎么看待
+
+技术：
+jdk hashmap内部结构大体说一下
+红黑树会比较快的原因
+get方法的实现 key的hashcode异或  后面的查找是如何进行的
+Java8流跟lambda表达式用过吗
+reduce   累积bigdecimal  
+创建一个流用什么方式
+
+Arrays.aslist()
+流里面map方法的参数类型，匿名内部类是继承哪个接口
+lambda函数式接口，用哪些方法
+jdk内置的方法有哪些属于lambda函数式接口
+http协议  常见请求头  标准请求头，说一说
+
+contenttype
+上传一个文件，会带哪些请求头
+认证相关的请求头
+跨域相关的
+缓存相关
+响应的状态码   301跳转
+未授权401  400 badrequest
+标准的响应头能不能说一遍
+
+valid  requestbody请求参数数据实体   有什么用处吗，不写会影响传参格式吗
+springboot如何处理http请求的，流程大概梳理一下
+mybatis预防SQL注入，参数化填充，自己有意做的功能还是别的工具来实现的
+mybatis一二级缓存，mybatis拦截器（handler类型转换处理），intercept
+mapper  xml自定义标签 平时自己做过吗
+springboot自动装配 说一说 提示了import
+自动装配过程中有一些condition注解，有没有看过源码，常见的内置的几个条件 说几个
+
+一面过的话  二面会有少量的技术面
+crm模块开发
+
+团队成员配置大概多少  10人以下
