@@ -225,3 +225,44 @@ crm模块开发
 16. mysql 优化
 17. 了不了解基金
 18. 期望薪资
+
+## 2022.09.09 穗禾 同事
+微服务架构  springcloud组建除了openfeign 还用了其他的组件吗
+网关  业务网关  没有
+流量入口，微服务入口数据请求聚合，耦合性太高，定制化接口
+openfeign abc三个服务，针对这3个服务做不同的配置，使用自定义注解，bean  MessageConverter转换
+openfeign重试机制有没有，如果需要重试，应该要怎么做
+服务之间的熔断，重新发起的策略
+分布式锁，用在什么场景下
+如果做分布式锁，要考虑哪些方面，重入情况，考虑安全性
+释放锁 怎么释放，key的构成
+Redis锁续期设置是多少
+Redis锁有没有什么潜在问题，
+springboot的扩展开发有哪些
+springboot读取配置的方式有哪些，jvm环境变量
+jvm启动时，怎样自定义参数进行变量配置
+springboot加载配置文件的目录，顺序不一样，原理
+springioc 创建对象方式，比如说注解扫描等，springfactories
+springboot  starter 自动化配置大概流程
+conditionOnxxxx用过哪些
+springboot基于spring进行启动的，启动过程（spring ioc）是在哪个节点上进行加载springboot的web环境
+了解spring  ioc的启动流程
+springboot  factories文件中可以配置过哪些东西
+本地事物怎么做，transaction配置过哪些字段
+事物传播，前一个事物挂起，后一个事物执行完后，
+springcloud组件用过哪些
+nacos节点之间，数据怎么同步的
+性能优化，哪方面的，分发数据分表，其他时间段
+分发表的3天热点数据有没有更好的优化策略
+数据库MySQL隔离级别，幻读在哪个隔离级别下，可重复读怎么解决幻读的，间隙锁
+MySQL锁了解吗，表锁，行锁，insert会加哪些锁
+MySQL走了索引，还能继续优化吗，知晓每一个步骤怎么
+死锁，怎么查看不用事物导致的死锁
+多线程，解决原子性，
+synchronized锁机制，获取锁里面用的数据结构，等待队列，索引等等
+读写锁
+jvm定位死锁，怎么查
+jvm优化配置做过吗
+业务方面  工作流，业务引擎用过吗
+问对方的问题
+问了薪资多少，是否在职
