@@ -1,5 +1,5 @@
 # interview
-Java面经记录
+Java面经记录 这里仅记录最新的，历史的移步各年的md文件中查阅
     
 ## 2022.06.14 字节跳动 飞书 企业应用 财务
 1. 算法题 蛇形打印二叉树 层序遍历变种  https://wenku.baidu.com/view/e4043a3dfc00bed5b9f3f90f76c66137ef064f57.html
