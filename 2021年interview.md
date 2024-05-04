@@ -17,7 +17,8 @@
 15. 具体的技术规划，工作中遇到什么问题；
     
 ## 2021.04.16 字节跳动 飞书 小程序面板
-算法题 判断字符串是否可以由字典中的字符串组成 动态规划 https://blog.csdn.net/summer2day/article/details/97430955
+算法题 判断字符串是否可以由字典中的字符串组成 动态规划  Leetcode 139  
+https://blog.csdn.net/summer2day/article/details/97430955
 
 ## 2021.04.14 阿里巴巴本地生活 同事
 1. rabbitmq怎么实现顺序消费，事务
