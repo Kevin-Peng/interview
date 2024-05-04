@@ -26,7 +26,7 @@ https://blog.csdn.net/summer2day/article/details/97430955
    八种（byte,short,int,long,float,double,char,boolean）
    float通常4个字节，由底数m和指数e组成，
    底数m部分：占用24bit(3个字节)的二进制数来表示此浮点数的实际值，最高位始终为1，不用来储存。
-   指数e部分：占用8bit(1个字节)的二进制数，可表示数值范围为0-255。此处算出的次方必须减去127才是真正的指数。
+   指数e部分：占用8bit(1个字节)的二进制数，可表示数值范围为0-255。此处算出的次方必须减去127才是真正的指数。  
    所以，float类型的指数可从-126到128。
 4. 线程池的参数 线程池的流程 使用线程池时考虑什么  
    corePoolSize：线程池中的常驻核心线程数。  
@@ -38,7 +38,7 @@ https://blog.csdn.net/summer2day/article/details/97430955
    handler：拒绝策略。  
 5. Set有几种实现
 6. HashMap是怎么扩容的
-7. JVM用的什么垃圾回收器
+7. JVM用的什么垃圾回收器  
    java9开始使用G1，之前老年代使用cms，年轻代是用parallNew，java17开始使用ZGC，特点是使用了染色指针和读屏障技术，空间换时间，大幅缩短大内存（最高16TB）下垃圾回收时间
 8. CMS停顿几次
    两次，初始标记和重新标记两个阶段
