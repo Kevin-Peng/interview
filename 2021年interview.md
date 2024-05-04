@@ -22,29 +22,43 @@ https://blog.csdn.net/summer2day/article/details/97430955
 
 ## 2021.04.14 阿里巴巴本地生活 同事
 1. rabbitmq怎么实现顺序消费，事务
-2. java基础数据类型 float是怎么存储的
-3. 线程池的参数 线程池的流程 使用线程池时考虑什么
-4. Set有几种实现
-5. HashMap是怎么扩容的
-6. JVM用的什么垃圾回收器
-7. CMS停顿几次
-8. ES用于什么场景
-9. git rebase和git merge的区别
-10. 链表判断环
-11. 二叉树最大路径和
-12. java.util包下用到的设计模式
-13. es倒排索引 倒排索引的底层数据结构
-14. AQS的原理 CAS
-15. 怎么解决死锁
-16. 线上频繁full GC怎么解决
-17. CMS的理解 CMS的缺点
-18. spring cloud的组件 为什么选择spring cloud config
-19. 集群限流的策略
-20. 知道的分布式解决方案
-21. HashMap ConcurrentHashMap CountDownLatch CyclicBarrier
-22. 创建线程的方式 线程池参数
-23. 线上问题排查（CPU100%，OOM）
-24. mysql索引（为什么用B+树 最左匹配原则）
+2. java基础数据类型 float是怎么存储的  
+   八种（byte,short,int,long,float,double,char,boolean）
+   float通常4个字节，由底数m和指数e组成，
+   底数m部分：占用24bit(3个字节)的二进制数来表示此浮点数的实际值，最高位始终为1，不用来储存。
+   指数e部分：占用8bit(1个字节)的二进制数，可表示数值范围为0-255。此处算出的次方必须减去127才是真正的指数。
+   所以，float类型的指数可从-126到128。
+4. 线程池的参数 线程池的流程 使用线程池时考虑什么  
+   corePoolSize：线程池中的常驻核心线程数。  
+   maximumPoolSize：线程池允许的最大线程数。  
+   keepAliveTime：非核心线程没有任务时的存活时间。  
+   unit：keepAliveTime的时间单位。  
+   workQueue：用来保存等待执行任务的队列。  
+   threadFactory：创建线程的工厂。  
+   handler：拒绝策略。  
+5. Set有几种实现
+6. HashMap是怎么扩容的
+7. JVM用的什么垃圾回收器
+   java9开始使用G1，之前老年代使用cms，年轻代是用parallNew，java17开始使用ZGC，特点是使用了染色指针和读屏障技术，空间换时间，大幅缩短大内存（最高16TB）下垃圾回收时间
+8. CMS停顿几次
+   两次，初始标记和重新标记两个阶段
+9. ES用于什么场景
+10. git rebase和git merge的区别
+11. 链表判断环
+12. 二叉树最大路径和
+13. java.util包下用到的设计模式
+14. es倒排索引 倒排索引的底层数据结构
+15. AQS的原理 CAS
+16. 怎么解决死锁
+17. 线上频繁full GC怎么解决
+18. CMS的理解 CMS的缺点
+19. spring cloud的组件 为什么选择spring cloud config
+20. 集群限流的策略
+21. 知道的分布式解决方案
+22. HashMap ConcurrentHashMap CountDownLatch CyclicBarrier
+23. 创建线程的方式 线程池参数
+24. 线上问题排查（CPU100%，OOM）
+25. mysql索引（为什么用B+树 最左匹配原则）
 
 ## 2021.04.22 阿里巴巴本地生活 一面 同事面经
 1. hashmap的数据结构
