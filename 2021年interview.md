@@ -58,7 +58,8 @@ https://blog.csdn.net/summer2day/article/details/97430955
 13. java.util包下用到的设计模式
 14. es倒排索引 倒排索引的底层数据结构
 15. AQS的原理 CAS
-16. 怎么解决死锁
+16. 怎么解决死锁  
+    互斥，请求与保持，不剥夺条件，循环等待  
 17. 线上频繁full GC怎么解决
 18. CMS的理解 CMS的缺点
 19. spring cloud的组件 为什么选择spring cloud config
