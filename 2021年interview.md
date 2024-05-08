@@ -66,7 +66,8 @@ https://blog.csdn.net/summer2day/article/details/97430955
 21. 知道的分布式解决方案
 22. HashMap ConcurrentHashMap CountDownLatch CyclicBarrier
 23. 创建线程的方式 线程池参数
-24. 线上问题排查（CPU100%，OOM）
+24. 线上问题排查（CPU100%，OOM）  
+   top指令查看线程占用cpu详情，jstack指令获取线程信息，jmap获取堆内存信息。  
 25. mysql索引（为什么用B+树 最左匹配原则）
 
 ## 2021.04.22 阿里巴巴本地生活 一面 同事面经
