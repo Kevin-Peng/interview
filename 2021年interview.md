@@ -54,7 +54,7 @@ https://blog.csdn.net/summer2day/article/details/97430955
 9. ES用于什么场景
 10. git rebase和git merge的区别
 11. 链表判断环
-12. 二叉树最大路径和
+12. 二叉树最大路径和 leetcode124 困难  
 13. java.util包下用到的设计模式  
     迭代器模式（Iterator Pattern）：在java.util包中，Iterator接口用于遍历元素集合。这是一个迭代器模式的例子，该模式允许顺序访问一个聚合对象的各个元素，而又不需要暴露该对象的内部表示。  
     观察者模式（Observer Pattern）：java.util.Observer接口用于观察对象状态的变化。当对象状态改变时，所有依赖它的对象都会得到通知并自动更新。这是观察者模式的一个例子，该模式定义了对象之间的一对多依赖关系，当一个对象改 
