@@ -56,11 +56,11 @@ https://blog.csdn.net/summer2day/article/details/97430955
 11. 链表判断环
 12. 二叉树最大路径和
 13. java.util包下用到的设计模式  
-    迭代器模式（Iterator Pattern）：在java.util包中，Iterator接口用于遍历元素集合。这是一个迭代器模式的例子，该模式允许顺序访问一个聚合对象的各个元素，而又不需要暴露该对象的内部表示12。  
+    迭代器模式（Iterator Pattern）：在java.util包中，Iterator接口用于遍历元素集合。这是一个迭代器模式的例子，该模式允许顺序访问一个聚合对象的各个元素，而又不需要暴露该对象的内部表示。  
     观察者模式（Observer Pattern）：java.util.Observer接口用于观察对象状态的变化。当对象状态改变时，所有依赖它的对象都会得到通知并自动更新。这是观察者模式的一个例子，该模式定义了对象之间的一对多依赖关系，当一个对象改 
-    变状态时，所有依赖于它的对象都会得到通知并自动更新12。  
+    变状态时，所有依赖于它的对象都会得到通知并自动更新。  
     工厂方法模式（Factory Method Pattern）：在java.util包中，例如Calendar类的getInstance方法，SecureRandom类的getInstance方法，以及NumberFormat类的getInstance方法都使用了工厂方法模式。该模式定义了一个用于创建对象的 
-    接口，让子类决定实例化哪一个类。工厂方法使一个类的实例化延迟到其子类12。  
+    接口，让子类决定实例化哪一个类。工厂方法使一个类的实例化延迟到其子类。  
 14. es倒排索引 倒排索引的底层数据结构
 15. AQS的原理 CAS
 16. 怎么解决死锁  
