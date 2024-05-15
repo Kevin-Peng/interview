@@ -424,6 +424,17 @@ jdk最新版本是多少
 ## 2024.05.09 蚂蚁金服 内容技术 
 1. 自我介绍  
 2. 笔试，反转链表 双指针 递归双方法 时间复杂度O(n)，注意双指针空间复杂度O(1)，递归空间复杂度O(n)， 除此以外头插法会更好理解一点。  
+    class Solution {  
+        public ListNode reverseList(ListNode head) {  
+            return recur(head, null);    // 调用递归并返回  
+        }  
+        private ListNode recur(ListNode cur, ListNode pre) {  
+            if (cur == null) return pre; // 终止条件  
+                ListNode res = recur(cur.next, cur);  // 递归后继节点  
+                cur.next = pre;              // 修改节点引用指向  
+                return res;                  // 返回反转链表的头节点  
+        }  
+    }  
 3. 项目介绍，使用了kafka，qps，数据量大小，kafka完整性检查  
 4. 项目里使用了redis，redis怎么使用来提升用户的访问效率， redis集群几种模式
 5. 线程池 参数 什么时候会进入等待队列
