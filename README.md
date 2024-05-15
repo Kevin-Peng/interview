@@ -424,7 +424,7 @@ jdk最新版本是多少
 ## 2024.05.09 蚂蚁金服 内容技术 
 1. 自我介绍  
 2. 笔试，反转链表 双指针 递归双方法 时间复杂度O(n)，注意双指针空间复杂度O(1)，递归空间复杂度O(n)， 除此以外头插法会更好理解一点。  
-    `java
+    ```java
     class Solution {  
         public ListNode reverseList(ListNode head) {  
             return recur(head, null);    // 调用递归并返回  
