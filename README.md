@@ -440,5 +440,10 @@ jdk最新版本是多少
 3. 项目介绍，使用了kafka，qps，数据量大小，kafka完整性检查  
 4. 项目里使用了redis，redis怎么使用来提升用户的访问效率， redis集群几种模式
 5. 线程池 参数 什么时候会进入等待队列
-6. 有三个线程t1，t2，t3，怎么确保顺序执行，java里现有的工具可以实现的知道吗
+6. 有三个线程t1，t2，t3，怎么确保顺序执行，java里现有的工具可以实现的知道吗  
+   在子线程中通过join()方法指定顺序  
+   在主线程中通过join()方法指定顺序  
+   通过倒数计时器CountDownLatch实现  
+   通过创建单一化线程池newSingleThreadExecutor()实现  
+   https://www.jb51.net/article/246666.htm  
 
