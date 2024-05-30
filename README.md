@@ -445,5 +445,6 @@ jdk最新版本是多少
    在主线程中通过join()方法指定顺序  
    通过倒数计时器CountDownLatch实现  
    通过创建单一化线程池newSingleThreadExecutor()实现  
-   https://www.jb51.net/article/246666.htm  
+   https://www.jb51.net/article/246666.htm
+7. 项目讲解思路是背景-目的-架构和技术-难点和解决-如何评估项目优势。这样展开个人感觉非常值得借鉴   
 
