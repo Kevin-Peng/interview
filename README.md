@@ -3,12 +3,14 @@ Java面经记录 这里仅记录最新的，历史的移步各年的md文件中�
 
 ## 2023.03.06 拼多多
 1. redis过期淘汰策略  
-   noeviction: 不进行淘汰，达到内存限制时，会返回错误。  
-   allkeys-lru: 当内存不足以容纳更多数据时，使用最近最少使用算法进行淘汰。  
-   allkeys-random: 在内存达到限制时随机淘汰键。  
-   volatile-lru: 只对设置了过期时间的键进行最近最少使用算法的淘汰。  
-   volatile-random: 在对设置了过期时间的键进行随机淘汰。  
-   volatile-ttl: 对设置了过期时间的键根据 TTL 进行淘汰，优先淘汰 TTL 较短的键。  
+   volatile-lru（Least Recently Used）:从已设置过期时间的数据集中挑选最近最少使用的数据淘汰。  
+   allkeys-lru:当内存不足以容纳新数据时，在所有数据集中，移除最近最少使用的数据。  
+   volatile-lfu（Least Frequently Used）:类似于volatile-lru，但基于访问频率来选择数据淘汰，即最不常访问的数据首先被淘汰。  
+   allkeys-lfu:类似于allkeys-lru，但也是基于访问频率来选择数据淘汰。  
+   volatile-random:从已设置过期时间的数据集中随机选择并淘汰数据。  
+   allkeys-random:随机选择并淘汰数据，不考虑是否设置了过期时间。  
+   volatile-ttl:优先淘汰那些TTL（Time to Live）值最小的已设置过期时间的数据。  
+   noeviction:当内存限制达到，并且没有设置任何淘汰策略时，默认的策略。在这种情况下，Redis将停止写入操作并返回错误。这不会自动删除任何数据。  
 2. redis基本数据结构
 3. redis实现延时缓存 zset 对score分值赋予到期时间，到了时间点依次取出缓存对应的值
 4. redis使用cluster模式时，一个请求过来的流程是怎么样的
