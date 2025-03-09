@@ -47,34 +47,37 @@ https://blog.csdn.net/summer2day/article/details/97430955
    EnumSet。专门为枚举类型设计的Set集合，使用位向量存储，高效地支持枚举类型的插入、删除和查询操作。  
    CopyOnWriteArraySet。一个线程安全的Set集合，基于Copy-On-Write技术实现，适用于读多写少的场景，但在修改时需要复制数组，可能会影响性能。  
 6. HashMap是怎么扩容的
-7. JVM用的什么垃圾回收器  
+   HashMap默认初始容量为16，负载因子为0.75。当元素数量超过当前容量与负载因子的乘积（即size > capacity * loadFactor）时触发扩容‌12。  
+   例如，默认情况下当元素数量达到12（16×0.75）时开始扩容。
+   当链表长度超过8且数组容量≥64时，链表会转为红黑树，但若扩容后链表长度减少到6以下，红黑树会退化为链表‌4。    
+8. JVM用的什么垃圾回收器  
    java9开始使用G1，之前老年代使用cms，年轻代是用parallNew，java17开始使用ZGC，特点是使用了染色指针和读屏障技术，空间换时间，大幅缩短大内存（最高16TB）下垃圾回收时间
-8. CMS停顿几次
+9. CMS停顿几次
    两次，初始标记和重新标记两个阶段
-9. ES用于什么场景
-10. git rebase和git merge的区别
-11. 链表判断环
-12. 二叉树最大路径和 leetcode124 困难  
-13. java.util包下用到的设计模式  
+10. ES用于什么场景
+11. git rebase和git merge的区别
+12. 链表判断环
+13. 二叉树最大路径和 leetcode124 困难  
+14. java.util包下用到的设计模式  
     迭代器模式（Iterator Pattern）：在java.util包中，Iterator接口用于遍历元素集合。这是一个迭代器模式的例子，该模式允许顺序访问一个聚合对象的各个元素，而又不需要暴露该对象的内部表示。  
     观察者模式（Observer Pattern）：java.util.Observer接口用于观察对象状态的变化。当对象状态改变时，所有依赖它的对象都会得到通知并自动更新。这是观察者模式的一个例子，该模式定义了对象之间的一对多依赖关系，当一个对象改 
     变状态时，所有依赖于它的对象都会得到通知并自动更新。  
     工厂方法模式（Factory Method Pattern）：在java.util包中，例如Calendar类的getInstance方法，SecureRandom类的getInstance方法，以及NumberFormat类的getInstance方法都使用了工厂方法模式。该模式定义了一个用于创建对象的 
     接口，让子类决定实例化哪一个类。工厂方法使一个类的实例化延迟到其子类。  
-14. es倒排索引 倒排索引的底层数据结构
-15. AQS的原理 CAS
-16. 怎么解决死锁  
+15. es倒排索引 倒排索引的底层数据结构
+16. AQS的原理 CAS
+17. 怎么解决死锁  
     互斥，请求与保持，不剥夺条件，循环等待  
-17. 线上频繁full GC怎么解决
-18. CMS的理解 CMS的缺点
-19. spring cloud的组件 为什么选择spring cloud config
-20. 集群限流的策略
-21. 知道的分布式解决方案
-22. HashMap ConcurrentHashMap CountDownLatch CyclicBarrier
-23. 创建线程的方式 线程池参数
-24. 线上问题排查（CPU100%，OOM）  
+18. 线上频繁full GC怎么解决
+19. CMS的理解 CMS的缺点
+20. spring cloud的组件 为什么选择spring cloud config
+21. 集群限流的策略
+22. 知道的分布式解决方案
+23. HashMap ConcurrentHashMap CountDownLatch CyclicBarrier
+24. 创建线程的方式 线程池参数
+25. 线上问题排查（CPU100%，OOM）  
    top指令查看线程占用cpu详情，jstack指令获取线程信息，jmap获取堆内存信息。  
-25. mysql索引（为什么用B+树 最左匹配原则）
+26. mysql索引（为什么用B+树 最左匹配原则）
 
 ## 2021.04.22 阿里巴巴本地生活 一面 同事面经
 1. hashmap的数据结构
