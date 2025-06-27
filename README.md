@@ -16,6 +16,57 @@ Java面经记录 这里仅记录最新的，历史的移步各年的md文件中�
 4. redis使用cluster模式时，一个请求过来的流程是怎么样的
 5. 工作中遇到什么难点
 6. 算法 完全二叉树一共有多少节点数，leetcode222 递归复杂度O(N)，要优化，使用二分查找，找到非完全二叉树的子树，其它部分按完全二叉树直接计算。
+   ```java
+   /**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public int countNodes(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int count = 0;
+        while (root != null) {
+            int leftH = getHeight(root.left);
+            int rightH = getHeight(root.right);
+            if (leftH == rightH) {
+                // 此时左子树一定满
+                count += (1 << leftH);
+                root = root.right;
+            } else {
+                // 此时右子数一定满
+                count += (1 << rightH);
+                root = root.left;
+            }
+        }
+        return count;
+    }
+
+    private int getHeight(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int height = 0;
+        while (root != null) {
+            height++;
+            root = root.left;
+        }
+        return height;
+    }
+}
+```
 
 ## 2023.03.25 百安居
 1. hashmap存储结构，怎么判断一个key是否存在
