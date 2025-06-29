@@ -107,3 +107,20 @@ https://blog.csdn.net/summer2day/article/details/97430955
     
 ## 2021.04.23 字节跳动 同事面经
 1. 算法题 合并区间  排序+双指针 https://leetcode-cn.com/problems/merge-intervals/
+   ```java
+   class Solution {
+      public int[][] merge(int[][] intervals) {
+         Arrays.sort(intervals, (intervals1, intervals2) -> (intervals1[0] - intervals2[0]));
+         List<int[]> merged = new ArrayList<int[]>();
+         for (int i = 0; i < intervals.length; ++i) {
+            int L = intervals[i][0], R = intervals[i][1];
+            if (merged.size() == 0 || merged.get(merged.size() - 1)[1] < L) {
+                merged.add(new int[] { L, R });
+            } else {
+                merged.get(merged.size() - 1)[1] = Math.max(merged.get(merged.size() - 1)[1], R);
+            }
+        }
+        return merged.toArray(new int[merged.size()][]);
+      }
+   }
+   ```
