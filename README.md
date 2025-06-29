@@ -184,6 +184,14 @@ Java面经记录 这里仅记录最新的，历史的移步各年的md文件中�
     性能影响不同。G1使用更多的内存和CPU负载，适合用于大堆的应用；CMS相对资源消耗较少，但可能在某些场景中被G1取代。  
     此外，G1引入了分区概念，会将内存分成2048个region，可以动态调整新生代和老年代的占比，而CMS则没有这些特性。）  
 9. 算法题 459重复的子字符串
+   ```java
+   class Solution {
+      public boolean repeatedSubstringPattern(String s) {
+           String str = s + s;
+           return str.substring(1, str.length() - 1).contains(s);
+      }
+   }
+   ```
 
 ## 2024.05.09 蚂蚁金服 内容技术 
 1. 自我介绍  
