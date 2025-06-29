@@ -12,6 +12,7 @@ Java面经记录 这里仅记录最新的，历史的移步各年的md文件中�
    volatile-ttl:优先淘汰那些TTL（Time to Live）值最小的已设置过期时间的数据。  
    noeviction:当内存限制达到，并且没有设置任何淘汰策略时，默认的策略。在这种情况下，Redis将停止写入操作并返回错误。这不会自动删除任何数据。  
 2. redis基本数据结构
+   ![image](https://github.com/user-attachments/assets/58ed0dbb-a47f-47e0-bc85-50ba16f55f09)
 3. redis实现延时缓存 zset 对score分值赋予到期时间，到了时间点依次取出缓存对应的值
 4. redis使用cluster模式时，一个请求过来的流程是怎么样的
 5. 工作中遇到什么难点
