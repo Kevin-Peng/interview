@@ -247,16 +247,16 @@ Java面经记录 这里仅记录最新的，历史的移步各年的md文件中�
 2. redis集群如果节点挂了，恢复的步骤是什么，raft选举具体怎么执行的  
 　一、故障检测与状态确认  
 　　　1.主观下线（PFAIL）​​  
-　　　　集群节点通过Gossip协议每秒互相发送PING/PONG消息检测状态。 
-　　　　若某节点在cluster-node-timeout（默认15秒）内未响应，则被其他节点标记为​​PFAIL​​（疑似故障）。   
-　　　2.客观下线（FAIL）​​  
-　　　　当​​超过半数主节点​​确认某节点为PFAIL状态时，该节点升级为​​FAIL​​（已确认故障），触发故障转移。  
-　　　　故障状态通过Gossip协议广播至整个集群。
-　　二、自动故障转移：选举新主节点  
-　　　　​​1.从节点资格校验  ​​
-　　　　　仅故障主节点的从节点可参与选举，且需满足：  
-            数据同步较新（slave_repl_offset ≥ 原主节点的master_repl_offset）；  
-            与主节点断开时间不超过 (node-timeout × slave-validity-factor)（默认150秒）。  
+　　　　集群节点通过Gossip协议每秒互相发送PING/PONG消息检测状态。　　
+　　　　若某节点在cluster-node-timeout（默认15秒）内未响应，则被其他节点标记为​​PFAIL​​（疑似故障）。　　  
+　　　2.客观下线（FAIL）​​　　
+　　　　当​​超过半数主节点​​确认某节点为PFAIL状态时，该节点升级为​​FAIL​​（已确认故障），触发故障转移。　　
+　　　　故障状态通过Gossip协议广播至整个集群。　　
+　二、自动故障转移：选举新主节点  
+　　　1.从节点资格校验  ​​
+　　　　仅故障主节点的从节点可参与选举，且需满足：  
+　　　　　数据同步较新（slave_repl_offset ≥ 原主节点的master_repl_offset）；  
+　　　　　与主节点断开时间不超过 (node-timeout × slave-validity-factor)（默认150秒）。  
 ​​       2.延迟等待与选举触发​​  
          从节点等待延迟时间：500ms + 随机延迟(0~500ms) + REPLICA_RANK × 1000ms（REPLICA_RANK为数据同步排名）。  
          排名靠前的从节点优先发起选举请求（复制偏移量最大者排名为0）。  
